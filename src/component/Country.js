@@ -6,8 +6,11 @@ const Country = (props) => {
  
   const {country}=props;
   const {name,flags,capital,population,area}=country;
+  
 
-
+ const handleRemoveCountry=(name)=>{
+     props.onRemoveCountry(name);
+ }
 
   return (
     <article className={style.country}>
@@ -17,6 +20,10 @@ const Country = (props) => {
         <h3>Capital: {capital}</h3>
         <h3>Population: {population}</h3>
         <h3>Area: {area}</h3>
+
+        <button className={style.btn} onClick={()=>{handleRemoveCountry(name.common)}}>
+          Remove Country
+        </button>
       </div>
     </article>
   );

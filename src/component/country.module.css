@@ -23,8 +23,9 @@
   border-radius: 0.6rem;
   padding: 0.6rem;
   cursor: pointer;
-  background-color: orangered;
+  background-color: orange;
   transition:all 0.3s;
+  
 }
 
 .btn:hover{
